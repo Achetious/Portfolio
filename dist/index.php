@@ -29,22 +29,22 @@
 
 <div id="services" class="services section">
     <div class="container mx-auto">
-        test
+
     </div>
 </div>
 <div id="projects" class="projects section">
     <div class="container mx-auto">
-        test
+
     </div>
 </div>
 <div id="about" class="about section">
     <div class="container mx-auto">
-        test
+
     </div>
 </div>
 <div id="contact" class="contact section">
     <div class="container mx-auto">
-        test
+
     </div>
 </div>
 <?php include("includes/footer.php") ?>

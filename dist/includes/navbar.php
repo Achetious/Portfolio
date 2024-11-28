@@ -1,4 +1,4 @@
-<div class="navbar h-16 flex items-center justify-between text-white bg-black font-bold text-3xl px-64 sticky top-0">
+<div class="navbar h-16 flex items-center justify-between text-white bg-black font-bold text-3xl px-64 sticky top-0 z-50">
     <div class="logo">
         Christian Andrew Pascual
     </div>
