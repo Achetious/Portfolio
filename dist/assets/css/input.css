@@ -13,9 +13,19 @@ body {
 }
 
 .section {
-  @apply h-screen;
+  @apply h-full;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+a {
+  @apply hover:text-[#d268cc];
+}
+
+.gradient-hr {
+  height: 5px; /* Set the thickness of the line */
+  border: none; /* Remove default border */
+  background: radial-gradient(circle, #ff1bf4 75%, #fcd5f9 100%);
 }
