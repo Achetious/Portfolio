@@ -27,7 +27,7 @@ a {
 .gradient-hr {
   height: 5px; /* Set the thickness of the line */
   border: none; /* Remove default border */
-  background: linear-gradient(#ff1bf4, #fcd5f9);
+  background: linear-gradient(#f539eb, #ffa7f8);
 }
 
 .gradientbg {
@@ -47,7 +47,7 @@ a {
 }
 
 .custom-radius {
-  border-radius: 25% 75% 75% 25% / 50% 50% 50% 50%;
+  border-radius: 30% 48% 42% 30% / 50% 30% 30% 50%;
 }
 
 .custom-radius1 {
