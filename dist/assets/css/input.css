@@ -27,5 +27,41 @@ a {
 .gradient-hr {
   height: 5px; /* Set the thickness of the line */
   border: none; /* Remove default border */
-  background: radial-gradient(circle, #ff1bf4 75%, #fcd5f9 100%);
+  background: linear-gradient(#ff1bf4, #fcd5f9);
+}
+
+.gradientbg {
+  background: linear-gradient(#deb8f5, #ba42c0);
+}
+
+.borderstyle {
+  border-color: #d268cc !important;
+}
+
+.item {
+  @apply flex justify-center items-center flex-col bg-bright-purle p-5 m-4 rounded-md bg-gradient-to-br from-[#111] to-[#333];
+}
+
+.item-text {
+  @apply lg:text-xl md:text-lg font-bold mt-3;
+}
+
+.custom-radius {
+  border-radius: 25% 75% 75% 25% / 50% 50% 50% 50%;
+}
+
+.custom-radius1 {
+  border-radius: 20% 80% 20% 80% / 100% 0% 100% 0%;
+}
+
+.ggrid {
+  @apply grid grid-cols-2 mb-24 items-center bg-[#222] custom-radius;
+}
+
+.project-title {
+  @apply col-span-2 lg:col-span-1 text-justify px-10 text-lg;
+}
+
+.project-img {
+  @apply col-span-2 lg:col-span-1 flex items-center justify-center;
 }
