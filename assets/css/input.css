@@ -17,7 +17,7 @@ body {
 }
 
 .section-title {
-  @apply mx-auto text-center text-4xl font-bold pt-24 mb-10 text-bright-purle;
+  @apply mx-auto text-center text-4xl font-bold pt-24 mb-10 text-bright-purple;
 }
 
 html {
@@ -43,7 +43,7 @@ a {
 }
 
 .item {
-  @apply flex justify-center items-center flex-col bg-bright-purle p-5 m-4 rounded-md bg-gradient-to-br from-[#111] to-[#333];
+  @apply flex justify-center items-center flex-col bg-bright-purple p-5 m-4 rounded-md bg-gradient-to-br from-[#111] to-[#333];
 }
 
 .itemtext {
@@ -59,7 +59,7 @@ a {
 }
 
 .project-title-title {
-  @apply text-3xl text-bright-purle font-bold pb-1;
+  @apply text-3xl text-bright-purple font-bold pb-1 text-start;
 }
 
 .project-img {
