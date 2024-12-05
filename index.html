@@ -131,6 +131,18 @@
         .s7 {
             color: #f59867;
         }
+
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
     </style>
 </head>
 
@@ -194,7 +206,7 @@
                                 class="border borderstyle text-center w-[211px] rounded-2xl h-14 relative text-white text-xl font-semibold group"
                                 type="button">
                                 <div
-                                    class="bg-black rounded-xl h-12 w-1/4 flex items-center justify-center absolute left-1 top-[3px] group-hover:w-[200px] z-10 duration-500">
+                                    class="bg-bright-purple rounded-xl h-12 w-1/4 flex items-center justify-center absolute left-1 top-[3px] group-hover:w-[200px] z-10 duration-500">
                                     <i class="fa-solid fa-download"></i>
                                 </div>
                                 <p class="translate-x-6">GET RESUME</p>
@@ -205,7 +217,7 @@
                                 class="border borderstyle text-center w-[180px] rounded-2xl h-14 relative text-white text-xl font-semibold group"
                                 type="button">
                                 <div
-                                    class="bg-black rounded-xl h-12 w-1/4 flex items-center justify-center absolute left-1 top-[3px] group-hover:w-[170px] z-10 duration-500">
+                                    class="bg-bright-purple rounded-xl h-12 w-1/4 flex items-center justify-center absolute left-1 top-[3px] group-hover:w-[170px] z-10 duration-500">
                                     <i class="fa-solid fa-envelope"></i>
                                 </div>
                                 <p class="translate-x-4">CONTACT</p>
@@ -280,9 +292,10 @@
         <div id="skills"></div>
         <div class="h-20 clear-both block"></div>
         <div class="flex items-center justify-center mb-3 w-3/4 mx-auto">
-            <hr class="flex-1 border-t-2 gradient-hr" />
-            <span class="text-4xl font-bold border-2 borderstyle px-3 py-1 rounded text-bright-purple">SKILLS</span>
-            <hr class="flex-1 border-t-2 gradient-hr" />
+            <hr class="flex-1 border-t-2 gradient-hr" data-aos="fade-right" data-aos-duration="1000" />
+            <span class="text-4xl font-bold border-2 borderstyle px-3 py-1 rounded text-bright-purple"
+                data-aos="fade-up" data-aos-duration="1000">SKILLS</span>
+            <hr class="flex-1 border-t-2 gradient-hr" data-aos="fade-left" data-aos-duration="1000" />
         </div>
         <div class="owl-carousel owl-theme mx-auto flex justify-center mt-10 pb-14 text-9xl" data-aos="fade-up"
             data-aos-duration="1000">
@@ -349,7 +362,7 @@
                     histories accessible for viewing and downloading. It includes features for categorizing patient
                     statuses, generating reports, and automating low-stock medicine notifications. The system enhances
                     efficiency in managing patient care, appointments, and medical documentation.
-                    <a href="http://cookbook.wuaze.com/" target="_blank">
+                    <a href="http://pupmsd.wuaze.com/" target="_blank">
                         <button type="button"
                             class="flex justify-center mt-3 gap-2 items-center shadow-xl text-lg bg-black backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 hover:border-black before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-bright-purple hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group">
                             View Website
@@ -363,13 +376,165 @@
                     </a>
                 </div>
                 <div class="project-img">
-                    <img src="assets/img/home.png" class="w-3/4 h-auto" alt="">
+                    <div id="carouselExampleIndicators5" class="carousel slide carousel-dark carousel-fade"
+                        data-bs-ride="carousel" data-bs-interval="2000">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1">
+                            </button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="1"
+                                aria-label="Slide 2">
+                            </button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="2"
+                                aria-label="Slide 3">
+                            </button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="3"
+                                aria-label="Slide 4">
+                            </button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="4"
+                                aria-label="Slide 5">
+                            </button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="5"
+                                aria-label="Slide 6">
+                            </button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="6"
+                                aria-label="Slide 7">
+                            </button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="7"
+                                aria-label="Slide 8">
+                            </button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="8"
+                                aria-label="Slide 9">
+                            </button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="9"
+                                aria-label="Slide 10">
+                            </button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="10"
+                                aria-label="Slide 11">
+                            </button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="11"
+                                aria-label="Slide 12">
+                            </button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="12"
+                                aria-label="Slide 13">
+                            </button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="13"
+                                aria-label="Slide 14">
+                            </button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="14"
+                                aria-label="Slide 15">
+                            </button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="15"
+                                aria-label="Slide 16">
+                            </button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="16"
+                                aria-label="Slide 17">
+                            </button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="17"
+                                aria-label="Slide 18">
+                            </button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="18"
+                                aria-label="Slide 19">
+                            </button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/img/projects/msd1.png" class="d-block w-100 h-[450px]" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/projects/msd2.png" class="d-block w-100 h-[450px]" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/projects/msd3.png" class="d-block w-100 h-[450px]" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/projects/msd4.png" class="d-block w-100 h-[450px]" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/projects/msd5.png" class="d-block w-100 h-[450px]" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/projects/msd6.png" class="d-block w-100 h-[450px]" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/projects/msd7.png" class="d-block w-100 h-[450px]" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/projects/msd8.png" class="d-block w-100 h-[450px]" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/projects/msd9.png" class="d-block w-100 h-[450px]" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/projects/msd10.png" class="d-block w-100 h-[450px]" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/projects/msd11.png" class="d-block w-100 h-[450px]" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/projects/msd12.png" class="d-block w-100 h-[450px]" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/projects/msd13.png" class="d-block w-100 h-[450px]" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/projects/msd14.png" class="d-block w-100 h-[450px]" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/projects/msd15.png" class="d-block w-100 h-[450px]" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/projects/msd16.png" class="d-block w-100 h-[450px]" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/projects/msd17.png" class="d-block w-100 h-[450px]" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/projects/msd18.png" class="d-block w-100 h-[450px]" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/projects/msd19.png" class="d-block w-100 h-[450px]" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators5"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators5"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
             </div>
             <!-- PIPER WARRIOR -->
             <div class="ggrid" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
                 <div class="project-img">
-                    <img src="assets/img/home.png" class="w-3/4 h-auto" alt="">
+                    <div id="carouselExampleIndicators4" class="carousel slide carousel-dark carousel-fade"
+                        data-bs-ride="carousel" data-bs-interval="2000">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1">
+                            </button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/img/projects/cb1.png" class="d-block w-100 h-[450px]" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators4"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators4"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
                 <div class="project-title">
                     <div class="project-title-title">
@@ -423,14 +588,36 @@
                     </a>
                 </div>
                 <div class="project-img">
-                    <img src="assets/img/home.png" class="w-3/4 h-auto" alt="">
+                    <div id="carouselExampleIndicators3" class="carousel slide carousel-dark carousel-fade"
+                        data-bs-ride="carousel" data-bs-interval="2000">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1">
+                            </button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/img/projects/cb1.png" class="d-block w-100 h-[450px]" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
             </div>
             <!-- VRMMS -->
             <div class="ggrid" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
                 <div class="project-img">
                     <div id="carouselExampleIndicators2" class="carousel slide carousel-dark carousel-fade"
-                        data-bs-ride="carousel">
+                        data-bs-ride="carousel" data-bs-interval="2000">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
                                 class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -531,7 +718,7 @@
                 </div>
                 <div class="project-img">
                     <div id="carouselExampleIndicators1" class="carousel slide carousel-dark carousel-fade"
-                        data-bs-ride="carousel">
+                        data-bs-ride="carousel" data-bs-interval="2000">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0"
                                 class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -590,7 +777,7 @@
             <div class="ggrid" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
                 <div class="project-img">
                     <div id="carouselExampleIndicators" class="carousel slide carousel-dark carousel-fade"
-                        data-bs-ride="carousel">
+                        data-bs-ride="carousel" data-bs-interval="2000">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                                 class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -602,19 +789,49 @@
                                 aria-label="Slide 4"></button>
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
                                 aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                                aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                                aria-label="Slide 7"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                                aria-label="Slide 8"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+                                aria-label="Slide 9"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
+                                aria-label="Slide 10"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10"
+                                aria-label="Slide 11"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="assets/img/projects/knj1.png" class="d-block w-100 h-[450px]" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="assets/img/projects/knj2.png" class="d-block w-100 h-[450px]" alt="...">
+                                <img src="assets/img/projects/knj8.png" class="d-block w-100 h-[450px]" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/projects/knj9.png" class="d-block w-100 h-[450px]" alt="...">
                             </div>
                             <div class="carousel-item">
                                 <img src="assets/img/projects/knj3.png" class="d-block w-100 h-[450px]" alt="...">
                             </div>
                             <div class="carousel-item">
+                                <img src="assets/img/projects/knj2.png" class="d-block w-100 h-[450px]" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/projects/knj10.png" class="d-block w-100 h-[450px]" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/projects/knj11.png" class="d-block w-100 h-[450px]" alt="...">
+                            </div>
+                            <div class="carousel-item">
                                 <img src="assets/img/projects/knj4.png" class="d-block w-100 h-[450px]" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/projects/knj6.png" class="d-block w-100 h-[450px]" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/projects/knj7.png" class="d-block w-100 h-[450px]" alt="...">
                             </div>
                             <div class="carousel-item">
                                 <img src="assets/img/projects/knj5.png" class="d-block w-100 h-[450px]" alt="...">
@@ -725,38 +942,38 @@
             </div>
         </div>
     </div>
-    <div id="contact" class="contact section">
-        <div class="section-title" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
-            CONTACT
+    <div id="contact" class="contact h-screen bg-[#111]">
+        <div class="mx-auto text-center text-4xl font-bold pt-48 mb-1 text-bright-purple" data-aos="fade-up"
+            data-aos-duration="1000">
+            Get In Touch
         </div>
-        <div class="container mx-auto">
-            <div class="ggrid" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
-                <div class="project-title">
-                    <div class="project-title-title">
-                        Social Networking Platform
-                    </div>
-                    <span class="text-bright-purple">Developed</span> a website using PHP, HTML, CSS, JS, and MySQL. A
-                    website for moms, chefs, students, and food enthusiasts devoted to exploring the culinary arts.
-                    Dedicated to advancing the foodservice field through education and training. It seeks to provide
-                    exceptional information on culinary career planning, industry trends, and culinary techniques for
-                    moms, students, novice cooks, as well as experienced chefs.
-                </div>
-                <div class="project-img">
-                    <img src="assets/img/home.png" class="w-3/4 h-auto" alt="">
-                </div>
+        <div class="container">
+            <div class="text-xl text-center p-1" data-aos="fade-up" data-aos-duration="1000">
+                Feel free to reach out to discuss projects, collaborations, <br> or opportunities — I'd love to hear
+                from
+                you!
             </div>
-            <div class="ggrid" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
-                <div class="project-img">
-                    <img src="assets/img/home.png" class="w-3/4 h-auto" alt="">
-                </div>
-                <div class="project-title">
-                    <div class="project-title-title">
-                        Thrift Shop E-commerce System
+            <div class="flex items-center py-10 px-30" id="form-details" data-aos="fade-up" data-aos-duration="1000">
+                <form action="function/contact.php" method="POST" class="w-1/3 mx-auto">
+                    <div class="block relative mb-3">
+                        <label for="email" class="block cursor-text leading-[140%] font-normal mb-2">Email</label>
+                        <input type="text" id="email" placeholder="Enter your email"
+                            class="rounded border border-gray-400 w-full font-normal leading-[18px] text-black tracking-[0px] appearance-none block h-11 m-0 p-[11px] focus:ring-2 ring-offset-2  ring-gray-900 outline-0">
+
                     </div>
-                    <span class="text-bright-purple">Developed</span> an online e-commerce website using PHP, HTML, CSS,
-                    JS, and MySQL that aims to provide a thrilling and enjoyable platform for thrift shoppers, enhancing
-                    the experience for users.
-                </div>
+                    <div class="block relative mb-3">
+                        <label for="password" class="block cursor-text leading-[140%] font-normal mb-2">Number</label>
+                        <input type="number" id="number" placeholder="Enter your number"
+                            class="rounded border border-gray-400 w-full font-normal leading-[18px] text-black tracking-[0px] appearance-none block h-11 m-0 p-[11px] focus:ring-2 ring-offset-2 ring-gray-900 outline-0">
+                    </div>
+                    <div class="block relative mb-3">
+                        <label for="message" class="block cursor-text leading-[140%] font-normal mb-2">Message</label>
+                        <textarea name="message"
+                            class="rounded border border-gray-400 w-full font-normal leading-[18px] text-black tracking-[0px] appearance-none block m-0 p-[11px] focus:ring-2 ring-offset-2 ring-gray-900 outline-0 h-[150px]"
+                            placeholder="Enter your Message" required></textarea>
+                    </div>
+                    <button type="button" class="btn btn-lg btn-secondary w-full" name="submitContact">Submit</button>
+                </form>
             </div>
         </div>
     </div>

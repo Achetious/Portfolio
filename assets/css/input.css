@@ -55,7 +55,7 @@ a {
 }
 
 .project-title {
-  @apply col-span-2 lg:col-span-1 text-justify px-10 text-lg;
+  @apply col-span-2 lg:col-span-1 text-justify p-10 text-lg;
 }
 
 .project-title-title {
