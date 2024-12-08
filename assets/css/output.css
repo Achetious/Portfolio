@@ -611,12 +611,20 @@ video {
   bottom: 0px;
 }
 
+.bottom-4{
+  bottom: 1rem;
+}
+
 .left-0{
   left: 0px;
 }
 
 .left-1{
   left: 0.25rem;
+}
+
+.right-4{
+  right: 1rem;
 }
 
 .top-0{
@@ -681,10 +689,6 @@ video {
   margin-bottom: 0.75rem;
 }
 
-.mb-8{
-  margin-bottom: 2rem;
-}
-
 .mt-10{
   margin-top: 2.5rem;
 }
@@ -711,6 +715,10 @@ video {
 
 .grid{
   display: grid;
+}
+
+.hidden{
+  display: none;
 }
 
 .h-11{
@@ -811,6 +819,10 @@ video {
 
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer{
+  cursor: pointer;
 }
 
 .cursor-text{
@@ -985,20 +997,16 @@ video {
   padding-bottom: 3.5rem;
 }
 
+.pb-20{
+  padding-bottom: 5rem;
+}
+
 .pb-24{
   padding-bottom: 6rem;
 }
 
 .pt-48{
   padding-top: 12rem;
-}
-
-.pb-10{
-  padding-bottom: 2.5rem;
-}
-
-.pb-20{
-  padding-bottom: 5rem;
 }
 
 .text-center{
@@ -1095,6 +1103,12 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.shadow-md{
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-xl{
@@ -1407,21 +1421,7 @@ a:hover{
   fill: #fff;
 }
 
-@media not all and (min-width: 1536px){
-  .max-2xl\:h-full{
-    height: 100%;
-  }
-}
-
 @media not all and (min-width: 1280px){
-  .max-xl\:h-full{
-    height: 100%;
-  }
-
-  .max-xl\:gap-2{
-    gap: 0.5rem;
-  }
-
   .max-xl\:gap-4{
     gap: 1rem;
   }
@@ -1430,6 +1430,14 @@ a:hover{
 @media not all and (min-width: 1024px){
   .max-lg\:mt-5{
     margin-top: 1.25rem;
+  }
+
+  .max-lg\:ml-3{
+    margin-left: 0.75rem;
+  }
+
+  .max-lg\:ml-5{
+    margin-left: 1.25rem;
   }
 
   .max-lg\:flex{
@@ -1442,10 +1450,6 @@ a:hover{
 
   .max-lg\:flex-col-reverse{
     flex-direction: column-reverse;
-  }
-
-  .max-lg\:gap-2{
-    gap: 0.5rem;
   }
 }
 
@@ -1462,6 +1466,10 @@ a:hover{
 @media not all and (min-width: 640px){
   .max-sm\:mb-10{
     margin-bottom: 2.5rem;
+  }
+
+  .max-sm\:ml-3{
+    margin-left: 0.75rem;
   }
 
   .max-sm\:hidden{
@@ -1531,30 +1539,6 @@ a:hover{
     margin-right: 20rem;
   }
 
-  .xl\:mb-10{
-    margin-bottom: 2.5rem;
-  }
-
-  .xl\:h-\[500px\]{
-    height: 500px;
-  }
-
-  .xl\:h-screen{
-    height: 100vh;
-  }
-
-  .xl\:h-\[600px\]{
-    height: 600px;
-  }
-
-  .xl\:h-96{
-    height: 24rem;
-  }
-
-  .xl\:h-full{
-    height: 100%;
-  }
-
   .xl\:gap-10{
     gap: 2.5rem;
   }
@@ -1562,11 +1546,5 @@ a:hover{
   .xl\:px-64{
     padding-left: 16rem;
     padding-right: 16rem;
-  }
-}
-
-@media (min-width: 1536px){
-  .\32xl\:h-\[500px\]{
-    height: 500px;
   }
 }

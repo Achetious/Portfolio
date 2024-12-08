@@ -47,3 +47,24 @@ function closeSidebarOnClickOutside(event) {
 
 // Add event listener to close sidebar on click outside
 document.body.addEventListener("click", closeSidebarOnClickOutside);
+
+// Show or hide the scroll-to-top arrow based on the scroll position
+window.addEventListener("scroll", function () {
+  var scrollTopArrow = document.getElementById("scrollTopArrow");
+  if (window.scrollY > 100) {
+    // Adjust 100 as needed for the offset
+    scrollTopArrow.classList.remove("hidden");
+  } else {
+    scrollTopArrow.classList.add("hidden");
+  }
+});
+
+// Scroll back to the top when the arrow is clicked
+document
+  .getElementById("scrollTopArrow")
+  .addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
