@@ -65,3 +65,7 @@ a {
 .project-img {
   @apply col-span-2 lg:col-span-1 flex items-center justify-center;
 }
+
+.blur {
+  @apply blur-sm;
+}
