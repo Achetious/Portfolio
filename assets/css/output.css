@@ -717,10 +717,6 @@ video {
   display: grid;
 }
 
-.hidden{
-  display: none;
-}
-
 .h-11{
   height: 2.75rem;
 }
@@ -1262,6 +1258,18 @@ a:hover{
   background-color: rgb(34 34 34 / var(--tw-bg-opacity, 1));
 }
 
+@media not all and (min-width: 1024px){
+  .ggrid{
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media not all and (min-width: 768px){
+  .ggrid{
+    margin-bottom: 0.75rem;
+  }
+}
+
 .project-title{
   grid-column: span 2 / span 2;
   padding: 2.5rem;
@@ -1428,16 +1436,12 @@ a:hover{
 }
 
 @media not all and (min-width: 1024px){
-  .max-lg\:mt-5{
-    margin-top: 1.25rem;
-  }
-
-  .max-lg\:ml-3{
-    margin-left: 0.75rem;
-  }
-
   .max-lg\:ml-5{
     margin-left: 1.25rem;
+  }
+
+  .max-lg\:mt-5{
+    margin-top: 1.25rem;
   }
 
   .max-lg\:flex{
@@ -1466,10 +1470,6 @@ a:hover{
 @media not all and (min-width: 640px){
   .max-sm\:mb-10{
     margin-bottom: 2.5rem;
-  }
-
-  .max-sm\:ml-3{
-    margin-left: 0.75rem;
   }
 
   .max-sm\:hidden{
