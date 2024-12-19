@@ -51,7 +51,7 @@ a {
 }
 
 .ggrid {
-  @apply grid grid-cols-2 mb-20 items-center bg-[#222] rounded-xl;
+  @apply grid grid-cols-2 max-lg:mb-10 max-md:mb-3 mb-20 items-center bg-[#222] rounded-xl;
 }
 
 .project-title {
