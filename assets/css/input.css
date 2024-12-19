@@ -59,7 +59,7 @@ a {
 }
 
 .project-title-title {
-  @apply text-3xl text-bright-purple font-bold pb-1 text-start;
+  @apply text-3xl text-bright-purple font-bold text-start;
 }
 
 .project-img {
@@ -68,4 +68,8 @@ a {
 
 .blur {
   @apply blur-sm;
+}
+
+.project-img-fw {
+  @apply grayscale-[90%] hover:grayscale-0 transition duration-300;
 }

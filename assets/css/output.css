@@ -590,6 +590,10 @@ video {
   }
 }
 
+.pointer-events-none{
+  pointer-events: none;
+}
+
 .fixed{
   position: fixed;
 }
@@ -604,6 +608,10 @@ video {
 
 .sticky{
   position: sticky;
+}
+
+.inset-0{
+  inset: 0px;
 }
 
 .inset-y-0{
@@ -689,6 +697,10 @@ video {
   margin-bottom: 0.75rem;
 }
 
+.mb-4{
+  margin-bottom: 1rem;
+}
+
 .mt-10{
   margin-top: 2.5rem;
 }
@@ -717,8 +729,8 @@ video {
   display: grid;
 }
 
-.hidden{
-  display: none;
+.contents{
+  display: contents;
 }
 
 .h-11{
@@ -745,12 +757,16 @@ video {
   height: 2rem;
 }
 
+.h-9{
+  height: 2.25rem;
+}
+
 .h-\[150px\]{
   height: 150px;
 }
 
-.h-\[500px\]{
-  height: 500px;
+.h-\[475px\]{
+  height: 475px;
 }
 
 .h-full{
@@ -859,6 +875,10 @@ video {
   justify-content: space-between;
 }
 
+.gap-1{
+  gap: 0.25rem;
+}
+
 .gap-2{
   gap: 0.5rem;
 }
@@ -873,6 +893,12 @@ video {
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.truncate{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .rounded{
@@ -936,6 +962,10 @@ video {
 .bg-bright-purple{
   --tw-bg-opacity: 1;
   background-color: rgb(210 104 204 / var(--tw-bg-opacity, 1));
+}
+
+.bg-opacity-50{
+  --tw-bg-opacity: 0.5;
 }
 
 .fill-white{
@@ -1105,6 +1135,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.opacity-10{
+  opacity: 0.1;
+}
+
 .shadow-md{
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -1144,6 +1178,18 @@ video {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-opacity{
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-transform{
+  transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1277,7 +1323,6 @@ a:hover{
 }
 
 .project-title-title{
-  padding-bottom: 0.25rem;
   text-align: start;
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1301,6 +1346,21 @@ a:hover{
 
 .blur{
   --tw-blur: blur(4px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.project-img-fw{
+  --tw-grayscale: grayscale(90%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.project-img-fw:hover{
+  --tw-grayscale: grayscale(0);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -1395,6 +1455,10 @@ a:hover{
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
+.group:hover .group-hover\:z-50{
+  z-index: 50;
+}
+
 .group:hover .group-hover\:w-\[170px\]{
   width: 170px;
 }
@@ -1405,6 +1469,12 @@ a:hover{
 
 .group:hover .group-hover\:rotate-90{
   --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:scale-110{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1421,6 +1491,10 @@ a:hover{
   fill: #fff;
 }
 
+.group:hover .group-hover\:opacity-100{
+  opacity: 1;
+}
+
 @media not all and (min-width: 1280px){
   .max-xl\:gap-4{
     gap: 1rem;
@@ -1428,16 +1502,12 @@ a:hover{
 }
 
 @media not all and (min-width: 1024px){
-  .max-lg\:mt-5{
-    margin-top: 1.25rem;
-  }
-
-  .max-lg\:ml-3{
-    margin-left: 0.75rem;
-  }
-
   .max-lg\:ml-5{
     margin-left: 1.25rem;
+  }
+
+  .max-lg\:mt-5{
+    margin-top: 1.25rem;
   }
 
   .max-lg\:flex{
@@ -1468,10 +1538,6 @@ a:hover{
     margin-bottom: 2.5rem;
   }
 
-  .max-sm\:ml-3{
-    margin-left: 0.75rem;
-  }
-
   .max-sm\:hidden{
     display: none;
   }
@@ -1493,8 +1559,8 @@ a:hover{
 }
 
 @media (min-width: 768px){
-  .md\:h-\[450px\]{
-    height: 450px;
+  .md\:h-\[475px\]{
+    height: 475px;
   }
 
   .md\:h-screen{
