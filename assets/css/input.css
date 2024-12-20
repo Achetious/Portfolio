@@ -17,7 +17,7 @@ body {
 }
 
 .section-title {
-  @apply mx-auto text-center text-4xl font-bold pt-24 mb-10 text-bright-purple;
+  @apply mx-auto text-center text-4xl max-xl:text-3xl font-bold pt-24 mb-10 text-bright-purple;
 }
 
 html {
@@ -55,11 +55,11 @@ a {
 }
 
 .project-title {
-  @apply col-span-2 lg:col-span-1 text-justify p-10 text-lg;
+  @apply col-span-2 lg:col-span-1 text-justify p-10 text-lg max-lg:text-base;
 }
 
 .project-title-title {
-  @apply text-3xl text-bright-purple font-bold text-start;
+  @apply text-3xl max-lg:text-2xl text-bright-purple font-bold text-start;
 }
 
 .project-img {

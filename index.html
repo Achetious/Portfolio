@@ -209,7 +209,7 @@
     </style>
 </head>
 
-<body class="bg-black text-white">
+<body class="bg-black text-white max-lg:text-base">
     <!-- NavBar -->
     <div
         class="navbar h-16 flex items-center align-content-center justify-between text-white bg-[#111] font-bold text-3xl xl:px-64 lg:px-36 sticky top-0 z-50">
@@ -252,7 +252,7 @@
         <!-- HOME -->
         <div class="home md:h-screen h-full max-md:mb-10">
             <div class="container mx-auto grid grid-cols-2 h-full max-lg:mt-5">
-                <div class="flex items-center text-5xl font-bold lg:col-span-1 col-span-2 max-sm:mb-10">
+                <div class="flex items-center text-5xl max-lg:text-4xl font-bold lg:col-span-1 col-span-2 max-sm:mb-10">
                     <div>
                         <div data-aos="fade-in" data-aos-duration="1000">Hello,</div>
                         <div data-aos="fade-in" data-aos-duration="1000">I am <span style="color: #d268cc;">Christian
@@ -273,10 +273,10 @@
                             <a href="https://drive.google.com/file/d/1jqziC2ELeBlty1mUGRvntUwK-NgNNSSb/view?usp=sharing"
                                 target="_blank" download="Pascual,_Christian_Andrew-CV.pdf">
                                 <button
-                                    class="border borderstyle text-center w-[211px] rounded-2xl h-14 relative text-white text-xl font-semibold group"
+                                    class="border borderstyle text-center w-[211px] max-lg:w-[190px] rounded-2xl h-14 max-lg:h-12 relative text-white text-xl max-lg:text-base font-semibold group"
                                     type="button">
                                     <div
-                                        class="bg-bright-purple rounded-xl h-12 w-1/4 flex items-center justify-center absolute left-1 top-[3px] group-hover:w-[200px] z-10 duration-500">
+                                        class="bg-bright-purple rounded-xl h-12 max-lg:h-10 w-1/4 flex items-center justify-center absolute left-1 top-[3px] group-hover:w-[200px] z-10 duration-500">
                                         <i class="fa-solid fa-download"></i>
                                     </div>
                                     <p class="translate-x-6">GET RESUME</p>
@@ -284,10 +284,10 @@
                             </a>
                             <a href="#contact">
                                 <button
-                                    class="border borderstyle text-center w-[180px] rounded-2xl h-14 relative text-white text-xl font-semibold group"
+                                    class="border borderstyle text-center w-[180px] rounded-2xl h-14 max-lg:h-12 relative text-white text-xl font-semibold group"
                                     type="button">
                                     <div
-                                        class="bg-bright-purple rounded-xl h-12 w-1/4 flex items-center justify-center absolute left-1 top-[3px] group-hover:w-[170px] z-10 duration-500">
+                                        class="bg-bright-purple rounded-xl h-12 max-lg:h-10 w-1/4 flex items-center justify-center absolute left-1 top-[3px] group-hover:w-[170px] z-10 duration-500">
                                         <i class="fa-solid fa-envelope"></i>
                                     </div>
                                     <p class="translate-x-4">CONTACT</p>
@@ -416,8 +416,8 @@
                 MY SERVICES
             </div>
             <div class="container mx-auto">
-                <div class="text-center xl:mx-80 mb-10 text-lg" data-aos="fade-in" data-aos-duration="1000"
-                    data-aos-anchor-placement="top-center">
+                <div class="text-center xl:mx-80 mb-10 text-lg max-xl:text-base" data-aos="fade-in"
+                    data-aos-duration="1000" data-aos-anchor-placement="top-center">
                     I am a full-stack web developer with a passion for creating efficient,
                     dynamic, and user-friendly web
                     applications.
@@ -1903,18 +1903,19 @@
             </div>
         </div>
         <!-- ABOUT -->
-        <div id="about" class="about h-screen">
-            <div class="section-title pb-20" data-aos="fade-up" data-aos-duration="1000">
+        <div id="about" class="about h-screen flex items-center justify-center flex-col">
+            <div class="pb-20">
 
             </div>
             <div class="container mx-auto flex max-lg:mb-10 max-md:mb-3 mb-20 items-center bg-black w-3/4">
-                <div class="col-1"></div>
-                <div class="col-4"><img src="assets/img/passport.jpg" alt="" class="w-3/4"></div>
-                <div class="col-6">
-                    <div class="text-5xl text-bright-purple font-bold mb-2">
+                <div class="col-lg-5 col-4 max-xl:hidden flex justify-center"><img src="assets/img/passport.jpg" alt=""
+                        class="w-3/5"></div>
+                <div class="col-lg-6 max-xl:hidden">
+                    <div class="text-5xl max-lg:text-3xl text-bright-purple font-bold mb-2">
                         WHO AM I
                     </div>
-                    <div class="text-xl text-justify">My name is Christian Andrew Pascual. I am an enthusiastic
+                    <div class="text-xl max-lg:text-base text-justify">My name is Christian Andrew Pascual. I am an
+                        enthusiastic
                         programmer in my daily life. I am a quick learner with aself-learning attitude. I love to
                         learn,
                         study
@@ -1924,23 +1925,53 @@
                         different
                         frameworks. I am available for anykind ofjob opportunity that suits my skills and
                         interests.
-                        <div class="mt-4">
+                        <div class="max-lg:mt-1 mt-4">
                             <a href="assets/file/Christian_Andrew_Pascual-CV.pdf"
                                 download="Pascual,_Christian_Andrew-CV.pdf">
                                 <button
-                                    class="border borderstyle text-center w-[350px] rounded-2xl h-14 relative text-white text-xl font-semibold group"
+                                    class="border borderstyle text-center w-[350px] max-lg:w-[310px] rounded-2xl h-14    relative text-white text-xl max-lg:text-base font-semibold group"
                                     type="button">
                                     <div
-                                        class="bg-bright-purple rounded-xl h-12 w-1/4 flex items-center justify-center absolute left-1 top-[3px] group-hover:w-[340px] z-10 duration-500">
+                                        class="bg-bright-purple rounded-xl h-12 max-lg:h-10 w-1/4 flex items-center justify-center absolute left-1 top-[3px] group-hover:w-[340px] max-lg:group-hover:w-[300px] z-10 duration-500">
                                         <i class="fa-solid fa-download"></i>
                                     </div>
-                                    <p class="translate-x-11">DOWNLOAD RESUME</p>
+                                    <p class="translate-x-11 max-lg:translate-x-9">DOWNLOAD RESUME</p>
                                 </button>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-1"></div>
+                <div class="col-12 max-xl:block hidden">
+                    <div class="text-5xl max-lg:text-3xl text-bright-purple font-bold mb-2">
+                        WHO AM I
+                    </div>
+                    <div class="text-xl max-lg:text-base text-justify">My name is Christian Andrew Pascual. I am an
+                        enthusiastic
+                        programmer in my daily life. I am a quick learner with aself-learning attitude. I love to
+                        learn,
+                        study
+                        and explore new technologies and am passionate about problem-solving. I love almost all the
+                        stacks of web application development and love to make the web more open to the world. My core
+                        skill is based more on UI/UX or Front End and I love to do most of the things using
+                        different
+                        frameworks. I am available for anykind ofjob opportunity that suits my skills and
+                        interests.
+                        <div class="max-lg:mt-1 mt-4">
+                            <a href="assets/file/Christian_Andrew_Pascual-CV.pdf"
+                                download="Pascual,_Christian_Andrew-CV.pdf">
+                                <button
+                                    class="border borderstyle text-center w-[350px] max-lg:w-[310px] rounded-2xl h-14    relative text-white text-xl max-lg:text-base font-semibold group"
+                                    type="button">
+                                    <div
+                                        class="bg-bright-purple rounded-xl h-12 max-lg:h-10 w-1/4 flex items-center justify-center absolute left-1 top-[3px] group-hover:w-[340px] max-lg:group-hover:w-[300px] z-10 duration-500">
+                                        <i class="fa-solid fa-download"></i>
+                                    </div>
+                                    <p class="translate-x-11 max-lg:translate-x-9">DOWNLOAD RESUME</p>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- CONTACT -->
