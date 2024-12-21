@@ -85,7 +85,7 @@
             thankYouMessage.style.display = "block";
           }
 
-          // Hide the thank you message after another 5 seconds (10 seconds from form submission)
+          // hide the thank you message after another 5 seconds (10 seconds from form submission)
           setTimeout(function () {
             if (thankYouMessage) {
               thankYouMessage.style.display = "none";
@@ -93,7 +93,7 @@
           }, 10000); // 10 seconds after showing the message
         }, 1); // .001 seconds after form submission
 
-        // Re-enable the buttons after another 5 seconds
+        // re-enable the buttons after another 10 seconds
         setTimeout(function () {
           var buttons = form.querySelectorAll("button");
           for (var i = 0; i < buttons.length; i++) {
