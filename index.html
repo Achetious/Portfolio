@@ -22,191 +22,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <!-- Swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <style>
-        .owl-carousel {
-            width: 75%;
-        }
-
-        .owl-item img {
-            width: 60% !important;
-        }
-
-        .cardd {
-            width: 650px;
-            height: 500px;
-            background: #15001f;
-            border: 1px solid #c042ff;
-            font-size: 14px;
-            font-family: monospace;
-            overflow: auto;
-        }
-
-        .titlebar {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 21px;
-            font-weight: 500;
-            background-color: #2e0043;
-            width: 100%;
-        }
-
-        .cardd button {
-            width: 40px;
-            height: 30px;
-            margin-left: -5px;
-            border: 0;
-            outline: 0;
-            background: transparent;
-            transition: 0.2s;
-        }
-
-        button svg path,
-        button svg rect,
-        button svg polygon {
-            fill: #ffffff;
-        }
-
-        button svg {
-            width: 10px;
-            height: 10px;
-        }
-
-        .close:hover {
-            background-color: #e81123;
-        }
-
-        .maximize:hover {
-            background-color: #c042ff2e;
-        }
-
-        .minimize:hover {
-            background-color: #c042ff2e;
-        }
-
-        #pre {
-            overflow: auto;
-            width: 100%;
-            padding: 10px;
-            height: auto;
-            color: #bafff8;
-        }
-
-        .curlies {
-            color: #ff0000;
-        }
-
-        .sc {
-            color: #e600ff;
-        }
-
-        .rounds {
-            color: #ffffff;
-        }
-
-        .operator {
-            color: #ffff00;
-        }
-
-        .s1 {
-            color: #22ff00;
-        }
-
-        .s2 {
-            color: #4281ff;
-        }
-
-        .s3 {
-            color: #ff4284;
-        }
-
-        .s4 {
-            color: #ffae00;
-        }
-
-        .s5 {
-            color: #ffffff;
-        }
-
-        .s6 {
-            color: #ffff00;
-        }
-
-        .s7 {
-            color: #f59867;
-        }
-
-        /* Chrome, Safari, Edge, Opera */
-        input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-
-        /* Firefox */
-        input[type=number] {
-            -moz-appearance: textfield;
-        }
-
-        swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        swiper-slide img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        swiper-container {
-            width: 90%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        swiper-slide {
-            background-size: cover;
-            background-position: center;
-        }
-
-        .mySwiper {
-            width: 80%;
-        }
-
-        .mySwiper2,
-        .mySwiper3,
-        .mySwiper4,
-        .mySwiper5,
-        .mySwiper6,
-        .mySwiper7 {
-            width: 80%;
-            box-sizing: border-box;
-            padding: 10px 0;
-        }
-
-        .mySwiper2 swiper-slide,
-        .mySwiper3 swiper-slide,
-        .mySwiper4 swiper-slide,
-        .mySwiper5 swiper-slide,
-        .mySwiper6 swiper-slide,
-        .mySwiper7 swiper-slide {
-            width: 100%;
-            height: 30%;
-            opacity: 0.4;
-        }
-
-        .mySwiper2 .swiper-slide-thumb-active,
-        .mySwiper3 .swiper-slide-thumb-active,
-        .mySwiper4 .swiper-slide-thumb-active,
-        .mySwiper5 .swiper-slide-thumb-active,
-        .mySwiper6 .swiper-slide-thumb-active,
-        .mySwiper7 .swiper-slide-thumb-active {
-            opacity: 1;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 </head>
 
 <body class="bg-black text-white max-lg:text-base">
@@ -284,7 +100,7 @@
                             </a>
                             <a href="#contact">
                                 <button
-                                    class="border borderstyle text-center w-[180px] rounded-2xl h-14 max-lg:h-12 relative text-white text-xl font-semibold group"
+                                    class="border borderstyle text-center w-[180px] max-lg:w-[160px] rounded-2xl h-14 max-lg:h-12 relative text-white text-xl max-lg:text-base font-semibold group"
                                     type="button">
                                     <div
                                         class="bg-bright-purple rounded-xl h-12 max-lg:h-10 w-1/4 flex items-center justify-center absolute left-1 top-[3px] group-hover:w-[170px] z-10 duration-500">
@@ -1192,8 +1008,8 @@
                         </h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        <div class="container">
+                    <div class="modal-body flex items-center justify-center">
+                        <div class="xl:container max-xl:w-full max-xl:mx-auto">
                             <swiper-container
                                 style="--swiper-navigation-color: #000000; --swiper-pagination-color: #fff"
                                 class="mySwiper" thumbs-swiper=".mySwiper2" loop="true" space-between="10"
@@ -1332,8 +1148,8 @@
                             Information Website with QR Code and Press to Talk Functionality (Mobile Website)</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        <div class="container">
+                    <div class="modal-body flex items-center justify-center">
+                        <div class="xl:w-1/5 lg:w-1/4 md:w-1/3 w-1/2 max-md:w-full mx-auto">
                             <swiper-container
                                 style="--swiper-navigation-color: #000000; --swiper-pagination-color: #fff"
                                 class="mySwiper" thumbs-swiper=".mySwiper3" loop="true" space-between="10"
@@ -1430,8 +1246,8 @@
                             System</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        <div class="container">
+                    <div class="modal-body flex items-center justify-center">
+                        <div class="xl:container max-xl:w-full max-xl:mx-auto">
                             <swiper-container
                                 style="--swiper-navigation-color: #000000; --swiper-pagination-color: #fff"
                                 class="mySwiper" thumbs-swiper=".mySwiper4" loop="true" space-between="10"
@@ -1618,8 +1434,8 @@
                             Management System</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        <div class="container">
+                    <div class="modal-body flex items-center justify-center">
+                        <div class="xl:container max-xl:w-full max-xl:mx-auto">
                             <swiper-container
                                 style="--swiper-navigation-color: #000000; --swiper-pagination-color: #fff"
                                 class="mySwiper" thumbs-swiper=".mySwiper5" loop="true" space-between="10"
@@ -1752,8 +1568,8 @@
                             Enthusiasts</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        <div class="container">
+                    <div class="modal-body flex items-center justify-center">
+                        <div class="xl:container max-xl:w-full mx-auto">
                             <swiper-container
                                 style="--swiper-navigation-color: #000000; --swiper-pagination-color: #fff"
                                 class="mySwiper" thumbs-swiper=".mySwiper6" loop="true" space-between="10"
@@ -1820,8 +1636,8 @@
                         <h1 class="modal-title fs-5 truncate" id="exampleModalLabel">Thrift Shop E-commerce System</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        <div class="container">
+                    <div class="modal-body flex items-center justify-center">
+                        <div class="xl:container max-xl:w-full max-xl:mx-auto">
                             <swiper-container
                                 style="--swiper-navigation-color: #000000; --swiper-pagination-color: #fff"
                                 class="mySwiper" thumbs-swiper=".mySwiper7" loop="true" space-between="10"
