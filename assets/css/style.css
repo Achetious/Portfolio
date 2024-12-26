@@ -8,12 +8,12 @@
 
 .cardd {
   width: 650px;
-  height: 500px;
+  height: 480px;
   background: #15001f;
   border: 1px solid #c042ff;
   font-size: 14px;
   font-family: monospace;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .titlebar {
