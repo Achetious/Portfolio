@@ -944,6 +944,10 @@ video {
   overflow-x: auto;
 }
 
+.overflow-y-auto{
+  overflow-y: auto;
+}
+
 .truncate{
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1232,6 +1236,10 @@ video {
   --tw-ring-offset-width: 2px;
 }
 
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .backdrop-blur-md{
   --tw-backdrop-blur: blur(12px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -1375,26 +1383,13 @@ a:hover{
   }
 }
 
-.ggrid{
-  margin-bottom: 5rem;
+.card__inner{
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: center;
   border-radius: 0.75rem;
   --tw-bg-opacity: 1;
   background-color: rgb(34 34 34 / var(--tw-bg-opacity, 1));
-}
-
-@media not all and (min-width: 1024px){
-  .ggrid{
-    margin-bottom: 2.5rem;
-  }
-}
-
-@media not all and (min-width: 768px){
-  .ggrid{
-    margin-bottom: 0.75rem;
-  }
 }
 
 .project-title{
@@ -1714,6 +1709,22 @@ a:hover{
     height: 100%;
   }
 
+  .max-lg\:max-h-20{
+    max-height: 5rem;
+  }
+
+  .max-lg\:max-h-72{
+    max-height: 18rem;
+  }
+
+  .max-lg\:max-h-80{
+    max-height: 20rem;
+  }
+
+  .max-lg\:max-h-96{
+    max-height: 24rem;
+  }
+
   .max-lg\:w-\[160px\]{
     width: 160px;
   }
@@ -1724,6 +1735,10 @@ a:hover{
 
   .max-lg\:w-\[310px\]{
     width: 310px;
+  }
+
+  .max-lg\:w-\[250px\]{
+    width: 250px;
   }
 
   .max-lg\:translate-x-9{
@@ -1782,10 +1797,6 @@ a:hover{
 }
 
 @media not all and (min-width: 640px){
-  .max-sm\:mb-10{
-    margin-bottom: 2.5rem;
-  }
-
   .max-sm\:hidden{
     display: none;
   }
@@ -1796,6 +1807,14 @@ a:hover{
 
   .max-sm\:h-\[400px\]{
     height: 400px;
+  }
+
+  .max-sm\:h-\[350px\]{
+    height: 350px;
+  }
+
+  .max-sm\:h-\[325px\]{
+    height: 325px;
   }
 }
 

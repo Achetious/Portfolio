@@ -50,8 +50,8 @@ a {
   @apply lg:text-xl md:text-lg text-base font-bold mt-3;
 }
 
-.ggrid {
-  @apply grid grid-cols-2 max-lg:mb-10 max-md:mb-3 mb-20 items-center bg-[#222] rounded-xl;
+.card__inner {
+  @apply grid grid-cols-2 items-center bg-[#222] rounded-xl;
 }
 
 .project-title {
